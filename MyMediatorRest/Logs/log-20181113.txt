@@ -603,3 +603,773 @@ FROM [Users] AS [u]
 2018-11-13 16:57:02.056 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 46.956700000000005ms
 2018-11-13 16:57:02.058 +02:00 [INF] Request finished in 54.4285ms 200 application/json; charset=utf-8
 2018-11-13 16:57:02.077 +02:00 [INF] Connection id "0HLI9F0OJTDOD", Request id "0HLI9F0OJTDOD:00000001": the application completed without reading the entire request body.
+2018-11-13 17:19:27.071 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:19:27.824 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 17:19:27.986 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:19:28.001 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:19:28.025 +02:00 [INF] 
+
+2018-11-13 17:19:28.031 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:19:28.294 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:19:29.539 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:19:29.603 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:19:29.612 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1596.9855ms.
+2018-11-13 17:19:29.631 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:19:29.698 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 1703.2508ms
+2018-11-13 17:19:29.730 +02:00 [INF] Request finished in 1909.2216ms 200 application/json; charset=utf-8
+2018-11-13 17:19:35.043 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 16
+2018-11-13 17:19:35.046 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:19:35.048 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:19:35.051 +02:00 [INF] 
+
+2018-11-13 17:19:35.054 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:19:35.059 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:19:35.067 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:19:35.073 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:19:35.075 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 24.3682ms.
+2018-11-13 17:19:35.083 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:19:35.086 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 37.9819ms
+2018-11-13 17:19:35.107 +02:00 [INF] Request finished in 64.3369ms 200 application/json; charset=utf-8
+2018-11-13 17:19:35.130 +02:00 [INF] Connection id "0HLI9FDJDHJ92", Request id "0HLI9FDJDHJ92:00000001": the application completed without reading the entire request body.
+2018-11-13 17:19:37.989 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 16
+2018-11-13 17:19:38.009 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 17:19:38.095 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 17:19:38.112 +02:00 [INF] 
+
+2018-11-13 17:19:38.114 +02:00 [WRN] Request UserCreateCommand begin
+2018-11-13 17:19:38.119 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:19:38.142 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 131.1901ms
+2018-11-13 17:19:38.146 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Errrrr
+   at Application.Users.Commands.UserCreateCommandHandler.Handle(UserCreateCommand request, CancellationToken cancellationToken) in C:\Projects\_My\MyMediatorRest\Application\Users\Commands\UserCreateCommandHandler.cs:line 29
+   at Application.Behaviors.RequestLoggerBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestLoggerBehavior.cs:line 22
+   at MyMediatorRest.Controllers.ValuesController.Post(UserCreateCommand userCreateCommand) in C:\Projects\_My\MyMediatorRest\MyMediatorRest\Controllers\ValuesController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-13 17:19:38.233 +02:00 [INF] Request finished in 244.1718ms 500 text/html; charset=utf-8
+2018-11-13 17:20:21.902 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:20:22.640 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 17:20:22.817 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:20:22.831 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:20:22.855 +02:00 [INF] 
+
+2018-11-13 17:20:22.860 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:20:23.125 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:20:23.334 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:20:23.396 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:20:23.404 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 560.8968ms.
+2018-11-13 17:20:23.422 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:20:23.485 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 662.4642ms
+2018-11-13 17:20:23.517 +02:00 [INF] Request finished in 879.8567ms 200 application/json; charset=utf-8
+2018-11-13 17:20:39.213 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 16
+2018-11-13 17:20:39.238 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 17:20:39.321 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 17:20:39.340 +02:00 [INF] 
+
+2018-11-13 17:20:39.341 +02:00 [WRN] Request UserCreateCommand begin
+2018-11-13 17:20:39.348 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:20:39.372 +02:00 [WRN] Response UserCreateCommand end
+
+2018-11-13 17:20:39.374 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 42.277ms.
+2018-11-13 17:20:39.376 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 135.5603ms
+2018-11-13 17:20:39.380 +02:00 [INF] Request finished in 167.8822ms 200 
+2018-11-13 17:20:53.959 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 16
+2018-11-13 17:20:53.962 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:20:53.965 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:20:53.967 +02:00 [INF] 
+
+2018-11-13 17:20:53.972 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:20:53.976 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:20:53.991 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:20:54.009 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:20:54.015 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 48.3111ms.
+2018-11-13 17:20:54.026 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:20:54.033 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 68.4436ms
+2018-11-13 17:20:54.036 +02:00 [INF] Request finished in 76.4623ms 200 application/json; charset=utf-8
+2018-11-13 17:20:54.043 +02:00 [INF] Connection id "0HLI9FE3OG4QR", Request id "0HLI9FE3OG4QR:00000002": the application completed without reading the entire request body.
+2018-11-13 17:21:05.305 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 16
+2018-11-13 17:21:05.307 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 17:21:05.311 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 17:21:05.323 +02:00 [INF] 
+
+2018-11-13 17:21:05.326 +02:00 [WRN] Request UserCreateCommand begin
+2018-11-13 17:21:05.331 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:21:05.338 +02:00 [WRN] Response UserCreateCommand end
+
+2018-11-13 17:21:05.341 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 18.132ms.
+2018-11-13 17:21:05.343 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 33.4454ms
+2018-11-13 17:21:05.350 +02:00 [INF] Request finished in 44.8075ms 200 
+2018-11-13 17:21:08.089 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 16
+2018-11-13 17:21:08.091 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:21:08.093 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:21:08.097 +02:00 [INF] 
+
+2018-11-13 17:21:08.101 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:21:08.111 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:21:08.116 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:21:08.122 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:21:08.123 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 26.5992ms.
+2018-11-13 17:21:08.126 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:21:08.133 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 39.6766ms
+2018-11-13 17:21:08.137 +02:00 [INF] Request finished in 47.5002ms 200 application/json; charset=utf-8
+2018-11-13 17:21:08.138 +02:00 [INF] Connection id "0HLI9FE3OG4QR", Request id "0HLI9FE3OG4QR:00000004": the application completed without reading the entire request body.
+2018-11-13 17:21:38.054 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 36
+2018-11-13 17:21:38.067 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 17:21:38.077 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 17:21:38.082 +02:00 [INF] 
+
+2018-11-13 17:21:38.086 +02:00 [WRN] Request UserCreateCommand begin
+2018-11-13 17:21:38.088 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:21:38.105 +02:00 [WRN] Response UserCreateCommand end
+
+2018-11-13 17:21:38.107 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 25.5894ms.
+2018-11-13 17:21:38.110 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 33.8524ms
+2018-11-13 17:21:38.114 +02:00 [INF] Request finished in 60.8218ms 200 
+2018-11-13 17:21:41.928 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:21:41.948 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:21:41.954 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:21:41.958 +02:00 [INF] 
+
+2018-11-13 17:21:41.959 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:21:41.962 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:21:41.966 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:21:41.973 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:21:41.975 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 17.147000000000002ms.
+2018-11-13 17:21:41.978 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:21:41.983 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 29.350900000000003ms
+2018-11-13 17:21:41.986 +02:00 [INF] Request finished in 57.8863ms 200 application/json; charset=utf-8
+2018-11-13 17:21:42.006 +02:00 [INF] Connection id "0HLI9FE3OG4QR", Request id "0HLI9FE3OG4QR:00000006": the application completed without reading the entire request body.
+2018-11-13 17:22:12.026 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:22:23.097 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 36
+2018-11-13 17:22:23.240 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 17:22:23.384 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 17:22:23.476 +02:00 [INF] 
+
+2018-11-13 17:22:23.481 +02:00 [WRN] Request UserCreateCommand begin
+2018-11-13 17:22:23.615 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:22:23.726 +02:00 [WRN] Response UserCreateCommand end
+
+2018-11-13 17:22:23.733 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 329.71500000000003ms.
+2018-11-13 17:22:23.750 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 503.8686ms
+2018-11-13 17:22:23.764 +02:00 [INF] Request finished in 668.5632ms 200 
+2018-11-13 17:22:45.749 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:22:45.761 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:22:45.770 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:22:45.783 +02:00 [INF] 
+
+2018-11-13 17:22:45.785 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:22:45.798 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:22:45.936 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:22:45.966 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:22:45.969 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 196.2357ms.
+2018-11-13 17:22:45.975 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:22:45.990 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 224.58540000000002ms
+2018-11-13 17:22:45.996 +02:00 [INF] Request finished in 246.4075ms 200 application/json; charset=utf-8
+2018-11-13 17:22:45.998 +02:00 [INF] Connection id "0HLI9FF7MS0PB", Request id "0HLI9FF7MS0PB:00000002": the application completed without reading the entire request body.
+2018-11-13 17:24:47.819 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:24:54.298 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 36
+2018-11-13 17:24:54.442 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 17:24:54.621 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 17:24:54.720 +02:00 [INF] 
+
+2018-11-13 17:24:54.724 +02:00 [WRN] Request UserCreateCommand begin
+2018-11-13 17:24:54.871 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:24:55.038 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-11-13 17:24:55.067 +02:00 [WRN] Response UserCreateCommand end
+
+2018-11-13 17:24:55.075 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 434.75460000000004ms.
+2018-11-13 17:24:55.094 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 646.41230000000007ms
+2018-11-13 17:24:55.117 +02:00 [INF] Request finished in 822.1515ms 200 
+2018-11-13 17:25:04.263 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:25:04.271 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:25:04.277 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:25:04.289 +02:00 [INF] 
+
+2018-11-13 17:25:04.290 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:25:04.296 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:25:04.433 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:25:04.457 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:25:04.461 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 181.70250000000001ms.
+2018-11-13 17:25:04.467 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:25:04.479 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 206.2577ms
+2018-11-13 17:25:04.483 +02:00 [INF] Request finished in 219.6204ms 200 application/json; charset=utf-8
+2018-11-13 17:25:04.486 +02:00 [INF] Connection id "0HLI9FGKOOA0O", Request id "0HLI9FGKOOA0O:00000002": the application completed without reading the entire request body.
+2018-11-13 17:25:35.361 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:25:50.465 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 36
+2018-11-13 17:25:50.610 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 17:25:50.754 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 17:25:50.852 +02:00 [INF] 
+
+2018-11-13 17:25:50.857 +02:00 [WRN] Request UserCreateCommand begin
+2018-11-13 17:25:50.994 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:25:51.151 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-11-13 17:25:51.192 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 577.0372ms
+2018-11-13 17:25:51.198 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Err
+   at Application.Behaviors.RequestTransactionBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestTransactionBehavior.cs:line 27
+   at Application.Behaviors.RequestLoggerBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestLoggerBehavior.cs:line 22
+   at MyMediatorRest.Controllers.ValuesController.Post(UserCreateCommand userCreateCommand) in C:\Projects\_My\MyMediatorRest\MyMediatorRest\Controllers\ValuesController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-13 17:25:51.288 +02:00 [INF] Request finished in 825.5286ms 500 text/html; charset=utf-8
+2018-11-13 17:25:59.745 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:25:59.753 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:25:59.760 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:25:59.772 +02:00 [INF] 
+
+2018-11-13 17:25:59.773 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:25:59.779 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:25:59.906 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:25:59.932 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 175.34310000000002ms
+2018-11-13 17:25:59.934 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Err
+   at Application.Behaviors.RequestTransactionBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestTransactionBehavior.cs:line 27
+   at Application.Behaviors.RequestLoggerBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestLoggerBehavior.cs:line 22
+   at MyMediatorRest.Controllers.ValuesController.Get() in C:\Projects\_My\MyMediatorRest\MyMediatorRest\Controllers\ValuesController.cs:line 28
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-13 17:25:59.956 +02:00 [INF] Request finished in 211.286ms 500 text/html; charset=utf-8
+2018-11-13 17:25:59.959 +02:00 [INF] Connection id "0HLI9FH5GEEJF", Request id "0HLI9FH5GEEJF:00000002": the application completed without reading the entire request body.
+2018-11-13 17:26:26.644 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:26:30.679 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:26:30.817 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:26:30.833 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:26:30.925 +02:00 [INF] 
+
+2018-11-13 17:26:30.929 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:26:31.112 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:26:31.311 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:26:31.392 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:26:31.401 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 553.8495ms.
+2018-11-13 17:26:31.417 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:26:31.475 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 651.2209ms
+2018-11-13 17:26:31.487 +02:00 [INF] Request finished in 810.1504ms 200 application/json; charset=utf-8
+2018-11-13 17:26:31.501 +02:00 [INF] Connection id "0HLI9FHHFSCUU", Request id "0HLI9FHHFSCUU:00000001": the application completed without reading the entire request body.
+2018-11-13 17:26:36.466 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 36
+2018-11-13 17:26:36.495 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 17:26:36.578 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 17:26:36.596 +02:00 [INF] 
+
+2018-11-13 17:26:36.598 +02:00 [WRN] Request UserCreateCommand begin
+2018-11-13 17:26:36.604 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:26:36.672 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-11-13 17:26:36.706 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 207.30030000000002ms
+2018-11-13 17:26:36.709 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Err
+   at Application.Users.Commands.UserCreateCommandHandler.Handle(UserCreateCommand request, CancellationToken cancellationToken) in C:\Projects\_My\MyMediatorRest\Application\Users\Commands\UserCreateCommandHandler.cs:line 30
+   at Application.Behaviors.RequestTransactionBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestTransactionBehavior.cs:line 25
+   at Application.Behaviors.RequestLoggerBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestLoggerBehavior.cs:line 22
+   at MyMediatorRest.Controllers.ValuesController.Post(UserCreateCommand userCreateCommand) in C:\Projects\_My\MyMediatorRest\MyMediatorRest\Controllers\ValuesController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-13 17:26:36.796 +02:00 [INF] Request finished in 330.1595ms 500 text/html; charset=utf-8
+2018-11-13 17:26:40.131 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 36
+2018-11-13 17:26:40.135 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 17:26:40.140 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 17:26:40.158 +02:00 [INF] 
+
+2018-11-13 17:26:40.162 +02:00 [WRN] Request UserCreateCommand begin
+2018-11-13 17:26:40.167 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:26:40.180 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-11-13 17:26:40.201 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 62.724000000000004ms
+2018-11-13 17:26:40.204 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Err
+   at Application.Users.Commands.UserCreateCommandHandler.Handle(UserCreateCommand request, CancellationToken cancellationToken) in C:\Projects\_My\MyMediatorRest\Application\Users\Commands\UserCreateCommandHandler.cs:line 30
+   at Application.Behaviors.RequestTransactionBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestTransactionBehavior.cs:line 25
+   at Application.Behaviors.RequestLoggerBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestLoggerBehavior.cs:line 22
+   at MyMediatorRest.Controllers.ValuesController.Post(UserCreateCommand userCreateCommand) in C:\Projects\_My\MyMediatorRest\MyMediatorRest\Controllers\ValuesController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-13 17:26:40.228 +02:00 [INF] Request finished in 96.7059ms 500 text/html; charset=utf-8
+2018-11-13 17:27:32.856 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:27:34.003 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:27:34.139 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:27:34.151 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:27:34.242 +02:00 [INF] 
+
+2018-11-13 17:27:34.246 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:27:34.412 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:27:34.579 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:27:34.634 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:27:34.642 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 478.567ms.
+2018-11-13 17:27:34.657 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:27:34.713 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 568.33530000000007ms
+2018-11-13 17:27:34.724 +02:00 [INF] Request finished in 722.7092ms 200 application/json; charset=utf-8
+2018-11-13 17:27:34.736 +02:00 [INF] Connection id "0HLI9FI4BRE3N", Request id "0HLI9FI4BRE3N:00000001": the application completed without reading the entire request body.
+2018-11-13 17:27:43.602 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 36
+2018-11-13 17:27:43.624 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 17:27:43.718 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 17:27:43.736 +02:00 [INF] 
+
+2018-11-13 17:27:43.738 +02:00 [WRN] Request UserCreateCommand begin
+2018-11-13 17:27:43.743 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:27:43.815 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-11-13 17:27:43.850 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 223.70770000000002ms
+2018-11-13 17:27:43.852 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Err
+   at Application.Users.Commands.UserCreateCommandHandler.Handle(UserCreateCommand request, CancellationToken cancellationToken) in C:\Projects\_My\MyMediatorRest\Application\Users\Commands\UserCreateCommandHandler.cs:line 30
+   at Application.Behaviors.RequestTransactionBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestTransactionBehavior.cs:line 25
+   at Application.Behaviors.RequestLoggerBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestLoggerBehavior.cs:line 22
+   at MyMediatorRest.Controllers.ValuesController.Post(UserCreateCommand userCreateCommand) in C:\Projects\_My\MyMediatorRest\MyMediatorRest\Controllers\ValuesController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-13 17:27:43.933 +02:00 [INF] Request finished in 330.2529ms 500 text/html; charset=utf-8
+2018-11-13 17:27:48.628 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:27:48.637 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:27:48.642 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:27:48.645 +02:00 [INF] 
+
+2018-11-13 17:27:48.652 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:27:48.655 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:27:48.660 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:27:48.666 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:27:48.668 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 22.474600000000002ms.
+2018-11-13 17:27:48.674 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:27:48.676 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 34.025600000000004ms
+2018-11-13 17:27:48.678 +02:00 [INF] Request finished in 49.8057ms 200 application/json; charset=utf-8
+2018-11-13 17:27:48.679 +02:00 [INF] Connection id "0HLI9FI4BRE3N", Request id "0HLI9FI4BRE3N:00000003": the application completed without reading the entire request body.
+2018-11-13 17:27:59.476 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:27:59.510 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:27:59.512 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:27:59.524 +02:00 [INF] 
+
+2018-11-13 17:27:59.539 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:27:59.542 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:27:59.546 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:27:59.553 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:27:59.555 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 31.5634ms.
+2018-11-13 17:27:59.561 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:27:59.564 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 51.360600000000005ms
+2018-11-13 17:27:59.568 +02:00 [INF] Request finished in 92.1738ms 200 application/json; charset=utf-8
+2018-11-13 17:27:59.572 +02:00 [INF] Connection id "0HLI9FI4BRE3N", Request id "0HLI9FI4BRE3N:00000004": the application completed without reading the entire request body.
+2018-11-13 17:28:09.630 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:28:09.634 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:28:09.636 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:28:09.638 +02:00 [INF] 
+
+2018-11-13 17:28:09.642 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:28:09.644 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:28:09.654 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:28:09.659 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:28:09.660 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 22.0786ms.
+2018-11-13 17:28:09.666 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:28:09.668 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 31.7529ms
+2018-11-13 17:28:09.670 +02:00 [INF] Request finished in 39.9272ms 200 application/json; charset=utf-8
+2018-11-13 17:28:09.672 +02:00 [INF] Connection id "0HLI9FI4BRE3N", Request id "0HLI9FI4BRE3N:00000005": the application completed without reading the entire request body.
+2018-11-13 17:28:10.540 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:28:10.543 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:28:10.547 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:28:10.565 +02:00 [INF] 
+
+2018-11-13 17:28:10.567 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:28:10.569 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:28:10.576 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:28:10.579 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:28:10.585 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 19.8766ms.
+2018-11-13 17:28:10.587 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:28:10.589 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 42.389500000000005ms
+2018-11-13 17:28:10.592 +02:00 [INF] Request finished in 51.3956ms 200 application/json; charset=utf-8
+2018-11-13 17:28:10.596 +02:00 [INF] Connection id "0HLI9FI4BRE3N", Request id "0HLI9FI4BRE3N:00000006": the application completed without reading the entire request body.
+2018-11-13 17:28:11.563 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:28:11.566 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:28:11.569 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:28:11.572 +02:00 [INF] 
+
+2018-11-13 17:28:11.576 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:28:11.578 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:28:11.583 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:28:11.590 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:28:11.592 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 20.7707ms.
+2018-11-13 17:28:11.598 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:28:11.600 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 30.989800000000002ms
+2018-11-13 17:28:11.603 +02:00 [INF] Request finished in 39.1692ms 200 application/json; charset=utf-8
+2018-11-13 17:28:11.604 +02:00 [INF] Connection id "0HLI9FI4BRE3N", Request id "0HLI9FI4BRE3N:00000007": the application completed without reading the entire request body.
+2018-11-13 17:29:09.547 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:29:14.840 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:14.969 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:14.984 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:15.205 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:15.379 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:15.436 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 439.92850000000004ms.
+2018-11-13 17:29:15.451 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:15.506 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 530.29770000000008ms
+2018-11-13 17:29:15.520 +02:00 [INF] Request finished in 682.66ms 200 application/json; charset=utf-8
+2018-11-13 17:29:15.533 +02:00 [INF] Connection id "0HLI9FJ2DG37B", Request id "0HLI9FJ2DG37B:00000001": the application completed without reading the entire request body.
+2018-11-13 17:29:17.355 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:17.360 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:17.363 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:17.369 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:17.382 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:17.388 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 20.0256ms.
+2018-11-13 17:29:17.391 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:17.394 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 31.611800000000002ms
+2018-11-13 17:29:17.399 +02:00 [INF] Request finished in 43.8648ms 200 application/json; charset=utf-8
+2018-11-13 17:29:17.401 +02:00 [INF] Connection id "0HLI9FJ2DG37B", Request id "0HLI9FJ2DG37B:00000002": the application completed without reading the entire request body.
+2018-11-13 17:29:18.677 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:18.680 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:18.683 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:18.686 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:18.695 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:18.702 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 16.6354ms.
+2018-11-13 17:29:18.706 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:18.709 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 25.4116ms
+2018-11-13 17:29:18.712 +02:00 [INF] Request finished in 35.0258ms 200 application/json; charset=utf-8
+2018-11-13 17:29:18.713 +02:00 [INF] Connection id "0HLI9FJ2DG37B", Request id "0HLI9FJ2DG37B:00000003": the application completed without reading the entire request body.
+2018-11-13 17:29:19.510 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:19.514 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:19.532 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:19.534 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:19.538 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:19.545 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 10.592600000000001ms.
+2018-11-13 17:29:19.548 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:19.553 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 20.6442ms
+2018-11-13 17:29:19.555 +02:00 [INF] Request finished in 44.9575ms 200 application/json; charset=utf-8
+2018-11-13 17:29:19.557 +02:00 [INF] Connection id "0HLI9FJ2DG37B", Request id "0HLI9FJ2DG37B:00000004": the application completed without reading the entire request body.
+2018-11-13 17:29:20.304 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:20.306 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:20.308 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:20.311 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:20.318 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:20.323 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 12.836400000000001ms.
+2018-11-13 17:29:20.330 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:20.333 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 24.407ms
+2018-11-13 17:29:20.339 +02:00 [INF] Request finished in 35.1642ms 200 application/json; charset=utf-8
+2018-11-13 17:29:20.340 +02:00 [INF] Connection id "0HLI9FJ2DG37B", Request id "0HLI9FJ2DG37B:00000005": the application completed without reading the entire request body.
+2018-11-13 17:29:21.145 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:21.151 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:21.154 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:21.159 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:21.168 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:21.174 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 15.014100000000001ms.
+2018-11-13 17:29:21.177 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:21.182 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 28.0382ms
+2018-11-13 17:29:21.184 +02:00 [INF] Request finished in 39.4987ms 200 application/json; charset=utf-8
+2018-11-13 17:29:21.186 +02:00 [INF] Connection id "0HLI9FJ2DG37B", Request id "0HLI9FJ2DG37B:00000006": the application completed without reading the entire request body.
+2018-11-13 17:29:21.977 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:21.980 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:21.989 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:21.994 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:22.012 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:22.019 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 25.5885ms.
+2018-11-13 17:29:22.023 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:22.025 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 36.8862ms
+2018-11-13 17:29:22.030 +02:00 [INF] Request finished in 53.423ms 200 application/json; charset=utf-8
+2018-11-13 17:29:22.034 +02:00 [INF] Connection id "0HLI9FJ2DG37B", Request id "0HLI9FJ2DG37B:00000007": the application completed without reading the entire request body.
+2018-11-13 17:29:26.925 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:29:33.777 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:33.918 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:33.931 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:34.020 +02:00 [INF] 
+
+2018-11-13 17:29:34.025 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:29:34.187 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:34.355 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:34.409 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:29:34.417 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 474.2889ms.
+2018-11-13 17:29:34.432 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:34.490 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 566.7077ms
+2018-11-13 17:29:34.501 +02:00 [INF] Request finished in 726.4235ms 200 application/json; charset=utf-8
+2018-11-13 17:29:34.513 +02:00 [INF] Connection id "0HLI9FJ822INO", Request id "0HLI9FJ822INO:00000001": the application completed without reading the entire request body.
+2018-11-13 17:29:35.493 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:35.498 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:35.503 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:35.507 +02:00 [INF] 
+
+2018-11-13 17:29:35.511 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:29:35.513 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:35.555 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:35.561 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:29:35.563 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 56.2267ms.
+2018-11-13 17:29:35.577 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:35.580 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 76.568ms
+2018-11-13 17:29:35.582 +02:00 [INF] Request finished in 89.5348ms 200 application/json; charset=utf-8
+2018-11-13 17:29:35.586 +02:00 [INF] Connection id "0HLI9FJ822INO", Request id "0HLI9FJ822INO:00000002": the application completed without reading the entire request body.
+2018-11-13 17:29:36.452 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:36.454 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:36.456 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:36.461 +02:00 [INF] 
+
+2018-11-13 17:29:36.464 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:29:36.467 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:36.474 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:36.480 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:29:36.484 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 23.417ms.
+2018-11-13 17:29:36.487 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:36.489 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 32.542500000000004ms
+2018-11-13 17:29:36.491 +02:00 [INF] Request finished in 39.2109ms 200 application/json; charset=utf-8
+2018-11-13 17:29:36.496 +02:00 [INF] Connection id "0HLI9FJ822INO", Request id "0HLI9FJ822INO:00000003": the application completed without reading the entire request body.
+2018-11-13 17:29:37.243 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:37.245 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:37.248 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:37.251 +02:00 [INF] 
+
+2018-11-13 17:29:37.255 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:29:37.258 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:37.262 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:37.270 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:29:37.271 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 20.0777ms.
+2018-11-13 17:29:37.274 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:37.279 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 31.127200000000002ms
+2018-11-13 17:29:37.281 +02:00 [INF] Request finished in 37.6973ms 200 application/json; charset=utf-8
+2018-11-13 17:29:37.283 +02:00 [INF] Connection id "0HLI9FJ822INO", Request id "0HLI9FJ822INO:00000004": the application completed without reading the entire request body.
+2018-11-13 17:29:38.005 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:38.010 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:38.012 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:38.014 +02:00 [INF] 
+
+2018-11-13 17:29:38.020 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:29:38.023 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:38.031 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:38.040 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:29:38.041 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 27.5682ms.
+2018-11-13 17:29:38.044 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:38.046 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 34.435300000000005ms
+2018-11-13 17:29:38.052 +02:00 [INF] Request finished in 47.3079ms 200 application/json; charset=utf-8
+2018-11-13 17:29:38.054 +02:00 [INF] Connection id "0HLI9FJ822INO", Request id "0HLI9FJ822INO:00000005": the application completed without reading the entire request body.
+2018-11-13 17:29:38.939 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:29:38.943 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:29:38.946 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:29:38.952 +02:00 [INF] 
+
+2018-11-13 17:29:38.953 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:29:38.955 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:29:38.959 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:29:38.966 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:29:38.968 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 16.3248ms.
+2018-11-13 17:29:38.974 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:29:38.976 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 29.9463ms
+2018-11-13 17:29:38.979 +02:00 [INF] Request finished in 40.2678ms 200 application/json; charset=utf-8
+2018-11-13 17:29:38.981 +02:00 [INF] Connection id "0HLI9FJ822INO", Request id "0HLI9FJ822INO:00000006": the application completed without reading the entire request body.
+2018-11-13 17:31:01.043 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:31:10.353 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 36
+2018-11-13 17:31:10.497 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 17:31:10.642 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 17:31:10.734 +02:00 [INF] 
+
+2018-11-13 17:31:10.739 +02:00 [WRN] Request UserCreateCommand begin
+2018-11-13 17:31:10.880 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:31:11.031 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-11-13 17:31:11.060 +02:00 [ERR] Rollback request
+2018-11-13 17:31:11.074 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 570.5489ms
+2018-11-13 17:31:11.080 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Err
+   at Application.Users.Commands.UserCreateCommandHandler.Handle(UserCreateCommand request, CancellationToken cancellationToken) in C:\Projects\_My\MyMediatorRest\Application\Users\Commands\UserCreateCommandHandler.cs:line 30
+   at Application.Behaviors.RequestTransactionBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestTransactionBehavior.cs:line 26
+   at Application.Behaviors.RequestLoggerBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Behaviors\RequestLoggerBehavior.cs:line 22
+   at MyMediatorRest.Controllers.ValuesController.Post(UserCreateCommand userCreateCommand) in C:\Projects\_My\MyMediatorRest\MyMediatorRest\Controllers\ValuesController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-13 17:31:11.167 +02:00 [INF] Request finished in 815.5256ms 500 text/html; charset=utf-8

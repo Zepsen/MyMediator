@@ -1,10 +1,8 @@
 ﻿using System.Reflection;
-using Application.Core;
-using Application.Core.Behaviors;
+using Application.Behaviors;
 using Application.Users.Commands;
 using Dom;
 using MediatR;
-using MediatR.Pipeline;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -33,6 +31,7 @@ namespace MyMediatorRest
             services.AddMediatR(Assembly.GetAssembly(typeof(UserCreateCommand)));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestLoggerBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestTransactionBehavior<,>));
 
             services
                 .AddMvc()

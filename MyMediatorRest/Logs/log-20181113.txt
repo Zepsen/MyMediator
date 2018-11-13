@@ -1373,3 +1373,58 @@ System.Exception: Err
    at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2018-11-13 17:31:11.167 +02:00 [INF] Request finished in 815.5256ms 500 text/html; charset=utf-8
+2018-11-13 17:44:35.478 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:44:46.083 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:44:46.217 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:44:46.230 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:44:46.315 +02:00 [INF] 
+
+2018-11-13 17:44:46.319 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:44:46.481 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:44:47.680 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:44:47.734 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:44:47.742 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1503.4546ms.
+2018-11-13 17:44:47.757 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:44:47.812 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 1589.4948000000002ms
+2018-11-13 17:44:47.823 +02:00 [INF] Request finished in 1745.8677ms 200 application/json; charset=utf-8
+2018-11-13 17:44:47.832 +02:00 [INF] Connection id "0HLI9FRNT0L06", Request id "0HLI9FRNT0L06:00000001": the application completed without reading the entire request body.
+2018-11-13 17:47:10.294 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:47:22.235 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:47:22.364 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:47:22.382 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:47:22.474 +02:00 [INF] 
+
+2018-11-13 17:47:22.478 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:47:22.636 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:47:22.807 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:47:22.861 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:47:22.869 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 469.81550000000004ms.
+2018-11-13 17:47:22.883 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:47:22.938 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 568.294ms
+2018-11-13 17:47:22.949 +02:00 [INF] Request finished in 715.7398ms 200 application/json; charset=utf-8
+2018-11-13 17:47:22.962 +02:00 [INF] Connection id "0HLI9FT6FOEIR", Request id "0HLI9FT6FOEIR:00000001": the application completed without reading the entire request body.
+2018-11-13 17:47:36.272 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 17:47:41.901 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values application/json 36
+2018-11-13 17:47:42.031 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 17:47:42.046 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 17:47:42.140 +02:00 [INF] 
+
+2018-11-13 17:47:42.145 +02:00 [WRN] Request UserQuery begin
+2018-11-13 17:47:42.318 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 17:47:42.492 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 17:47:42.549 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 17:47:42.557 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 503.35490000000004ms.
+2018-11-13 17:47:42.572 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 17:47:42.629 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 591.7373ms
+2018-11-13 17:47:42.640 +02:00 [INF] Request finished in 740.1728ms 200 application/json; charset=utf-8
+2018-11-13 17:47:42.650 +02:00 [INF] Connection id "0HLI9FTCAQ3BI", Request id "0HLI9FTCAQ3BI:00000001": the application completed without reading the entire request body.
+2018-11-13 17:53:38.147 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.

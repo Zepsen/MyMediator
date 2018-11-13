@@ -1,8 +1,8 @@
-﻿using DAL.Entities;
+﻿using Dom.Configurations;
+using Dom.Entities;
 using Microsoft.EntityFrameworkCore;
 
-
-namespace DAL
+namespace Dom
 {
     public class MyAppContext : DbContext
     {
@@ -16,6 +16,7 @@ namespace DAL
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // использование Fluent API
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
             base.OnModelCreating(modelBuilder);
         }
 

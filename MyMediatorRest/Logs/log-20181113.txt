@@ -1,0 +1,353 @@
+2018-11-13 16:10:10.036 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:10:51.354 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:10:52.428 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:10:52.639 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:10:52.656 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:10:52.684 +02:00 [INF] /n Request UserQuery begin
+2018-11-13 16:10:52.878 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 233.59490000000002ms
+2018-11-13 16:10:52.883 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.MissingMethodException: Cannot create an instance of an interface.
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean wrapExceptions, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean wrapExceptions, Boolean skipCheckThis, Boolean fillCache)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic, Boolean wrapExceptions)
+   at Dom.Extensions.ModelBuilderExt.<>c.<ApplyAllConfigurations>b__0_3(ValueTuple`2 it) in C:\Projects\_My\MyMediatorRest\Dom\Extensions\ModelBuilderExt.cs:line 22
+   at System.Linq.Utilities.<>c__DisplayClass2_0`3.<CombineSelectors>b__0(TSource x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dom.Extensions.ModelBuilderExt.ApplyAllConfigurations(ModelBuilder modelBuilder) in C:\Projects\_My\MyMediatorRest\Dom\Extensions\ModelBuilderExt.cs:line 18
+   at DAL.MyAppContext.OnModelCreating(ModelBuilder modelBuilder) in C:\Projects\_My\MyMediatorRest\Dom\MyAppContext.cs:line 20
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelCustomizer.Customize(ModelBuilder modelBuilder, DbContext context)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelCustomizer.Customize(ModelBuilder modelBuilder, DbContext context)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder, IModelValidator validator)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.<>c__DisplayClass5_0.<GetModel>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder, IModelValidator validator)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__7_1(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Microsoft.EntityFrameworkCore.Query.Internal.IAsyncEnumerableAccessor<TEntity>.get_AsyncEnumerable()
+   at Microsoft.EntityFrameworkCore.Extensions.Internal.QueryableExtensions.AsAsyncEnumerable[TSource](IQueryable`1 source)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Application.Users.Queries.UserQueryHandler.Handle(UserQuery request, CancellationToken cancellationToken) in C:\Projects\_My\MyMediatorRest\Application\Users\Queries\UserQueryHandler.cs:line 22
+   at Application.Core.Behaviors.RequestLoggerBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Projects\_My\MyMediatorRest\Application\Core\Behaviors\RequestLoggerBehavior.cs:line 23
+   at MyMediatorRest.Controllers.ValuesController.Get() in C:\Projects\_My\MyMediatorRest\MyMediatorRest\Controllers\ValuesController.cs:line 28
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-13 16:10:53.077 +02:00 [INF] Request finished in 653.113ms 500 text/html; charset=utf-8
+2018-11-13 16:10:53.649 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2018-11-13 16:10:53.653 +02:00 [INF] Request finished in 4.568ms 404 
+2018-11-13 16:12:13.139 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:12:13.744 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:12:13.904 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:12:13.920 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:12:13.948 +02:00 [INF] /n Request UserQuery begin
+2018-11-13 16:12:14.221 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:12:16.291 +02:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:12:16.367 +02:00 [INF] Response UserQuery end with response: ["Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User"]
+2018-11-13 16:12:16.389 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2455.6089ms.
+2018-11-13 16:12:16.406 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:12:16.493 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 2562.7291ms
+2018-11-13 16:12:16.519 +02:00 [INF] Request finished in 2777.4395ms 200 application/json; charset=utf-8
+2018-11-13 16:12:16.944 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2018-11-13 16:12:16.951 +02:00 [INF] Request finished in 6.2397ms 404 
+2018-11-13 16:13:41.052 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 16
+2018-11-13 16:13:41.070 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 16:13:41.159 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 16:13:41.171 +02:00 [INF] /n Request UserCreateCommand begin
+2018-11-13 16:13:41.178 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:13:41.241 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-11-13 16:13:41.267 +02:00 [INF] Response UserCreateCommand end with response: ()
+2018-11-13 16:13:41.271 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 108.77420000000001ms.
+2018-11-13 16:13:41.273 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 201.2356ms
+2018-11-13 16:13:41.276 +02:00 [INF] Request finished in 223.7676ms 200 
+2018-11-13 16:15:27.500 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:15:28.126 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:15:28.314 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:15:28.335 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:15:28.370 +02:00 [INF] \r\n Request UserQuery begin
+2018-11-13 16:15:28.662 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:15:28.857 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:15:28.922 +02:00 [INF] Response UserQuery end with response: ["Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User","Dom.Entities.User"]
+2018-11-13 16:15:28.945 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 594.79270000000008ms.
+2018-11-13 16:15:28.961 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:15:29.026 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 705.2907ms
+2018-11-13 16:15:29.062 +02:00 [INF] Request finished in 938.8039ms 200 application/json; charset=utf-8
+2018-11-13 16:16:54.669 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:16:55.340 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:16:55.508 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:16:55.522 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:16:55.550 +02:00 [INF] 
+Request UserQuery begin
+2018-11-13 16:16:55.807 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:16:56.000 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:16:56.057 +02:00 [INF] Response UserQuery end
+2018-11-13 16:16:56.067 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 529.2322ms.
+2018-11-13 16:16:56.081 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:16:56.149 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 631.5946ms
+2018-11-13 16:16:56.180 +02:00 [INF] Request finished in 842.294ms 200 application/json; charset=utf-8
+2018-11-13 16:17:26.296 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:17:27.370 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:17:27.527 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:17:27.540 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:17:27.566 +02:00 [INF] 
+Request UserQuery begin
+2018-11-13 16:17:27.809 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:17:28.091 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:17:28.156 +02:00 [INF] 
+Response UserQuery end
+2018-11-13 16:17:28.166 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 611.57400000000007ms.
+2018-11-13 16:17:28.182 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:17:28.258 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 725.3967ms
+2018-11-13 16:17:28.291 +02:00 [INF] Request finished in 925.9053ms 200 application/json; charset=utf-8
+2018-11-13 16:18:05.110 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:18:05.789 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:18:05.981 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:18:05.996 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:18:06.023 +02:00 [INF] 
+
+2018-11-13 16:18:06.028 +02:00 [INF] Request UserQuery begin
+2018-11-13 16:18:06.280 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:18:06.474 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:18:06.530 +02:00 [INF] 
+Response UserQuery end
+2018-11-13 16:18:06.538 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 527.1398ms.
+2018-11-13 16:18:06.555 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:18:06.639 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 632.12110000000007ms
+2018-11-13 16:18:06.656 +02:00 [INF] Request finished in 870.813ms 200 application/json; charset=utf-8
+2018-11-13 16:18:58.051 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:18:58.843 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:18:59.008 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:18:59.022 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:18:59.050 +02:00 [INF] Request UserQuery begin
+2018-11-13 16:18:59.316 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:18:59.513 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:18:59.570 +02:00 [INF] Response UserQuery end
+
+2018-11-13 16:18:59.578 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 543.7917ms.
+2018-11-13 16:18:59.593 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:18:59.657 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 642.6683ms
+2018-11-13 16:18:59.688 +02:00 [INF] Request finished in 847.0151ms 200 application/json; charset=utf-8
+2018-11-13 16:19:12.139 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 16
+2018-11-13 16:19:12.158 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 16:19:12.245 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 16:19:12.264 +02:00 [INF] Request UserCreateCommand begin
+2018-11-13 16:19:12.272 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:19:12.330 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-11-13 16:19:12.357 +02:00 [INF] Response UserCreateCommand end
+
+2018-11-13 16:19:12.361 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 104.3524ms.
+2018-11-13 16:19:12.364 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 203.14790000000002ms
+2018-11-13 16:19:12.368 +02:00 [INF] Request finished in 228.8137ms 200 
+2018-11-13 16:19:42.514 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:19:43.239 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:19:43.410 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:19:43.425 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:19:43.449 +02:00 [INF] 
+
+2018-11-13 16:19:43.456 +02:00 [INF] Request UserQuery begin
+2018-11-13 16:19:43.712 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:19:43.908 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:19:43.965 +02:00 [INF] Response UserQuery end
+
+2018-11-13 16:19:43.974 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 535.93000000000006ms.
+2018-11-13 16:19:43.989 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:19:44.074 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 638.75020000000006ms
+2018-11-13 16:19:44.092 +02:00 [INF] Request finished in 856.4588ms 200 application/json; charset=utf-8
+2018-11-13 16:19:57.227 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 16
+2018-11-13 16:19:57.245 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 16:19:57.346 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 16:19:57.369 +02:00 [INF] 
+
+2018-11-13 16:19:57.370 +02:00 [INF] Request UserCreateCommand begin
+2018-11-13 16:19:57.382 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:19:57.452 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-11-13 16:19:57.506 +02:00 [INF] Response UserCreateCommand end
+
+2018-11-13 16:19:57.509 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 151.65810000000002ms.
+2018-11-13 16:19:57.512 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 264.63550000000004ms
+2018-11-13 16:19:57.515 +02:00 [INF] Request finished in 288.079ms 200 
+2018-11-13 16:20:33.526 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/values application/json 16
+2018-11-13 16:20:33.529 +02:00 [INF] Route matched with {action = "Post", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest)
+2018-11-13 16:20:33.535 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) with arguments (["Application.Users.Commands.UserCreateCommand"]) - Validation state: "Valid"
+2018-11-13 16:20:33.539 +02:00 [INF] 
+
+2018-11-13 16:20:33.540 +02:00 [INF] Request UserCreateCommand begin
+2018-11-13 16:20:33.546 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:20:33.563 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2018-11-13 16:20:33.577 +02:00 [INF] Response UserCreateCommand end
+
+2018-11-13 16:20:33.579 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 40.6542ms.
+2018-11-13 16:20:33.589 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Post (MyMediatorRest) in 55.785700000000006ms
+2018-11-13 16:20:33.592 +02:00 [INF] Request finished in 65.5326ms 200 
+2018-11-13 16:22:06.254 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:22:07.039 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:22:07.198 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:22:07.212 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:22:07.234 +02:00 [INF] 
+
+2018-11-13 16:22:07.238 +02:00 [INF] Request UserQuery begin
+2018-11-13 16:22:07.493 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:22:07.682 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:22:07.734 +02:00 [INF] Response UserQuery end
+
+2018-11-13 16:22:07.740 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 516.1814ms.
+2018-11-13 16:22:07.754 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:22:07.842 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 614.187ms
+2018-11-13 16:22:07.855 +02:00 [INF] Request finished in 821.4218ms 200 application/json; charset=utf-8
+2018-11-13 16:22:23.944 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:22:24.699 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:22:24.842 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:22:24.856 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:22:24.879 +02:00 [INF] 
+
+2018-11-13 16:22:24.884 +02:00 [INF] Request UserQuery begin
+2018-11-13 16:22:25.134 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:22:25.319 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:22:25.374 +02:00 [INF] Response UserQuery end
+
+2018-11-13 16:22:25.380 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 512.1843ms.
+2018-11-13 16:22:25.393 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:22:25.454 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 605.9923ms
+2018-11-13 16:22:25.485 +02:00 [INF] Request finished in 788.1482ms 200 application/json; charset=utf-8
+2018-11-13 16:22:32.796 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:22:33.547 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:22:33.699 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:22:33.714 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:22:33.738 +02:00 [INF] 
+
+2018-11-13 16:22:33.741 +02:00 [INF] Request UserQuery begin
+2018-11-13 16:22:33.998 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:22:34.189 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:22:34.245 +02:00 [INF] Response UserQuery end
+
+2018-11-13 16:22:34.250 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 524.3718ms.
+2018-11-13 16:22:34.264 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:22:34.331 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 622.8234ms
+2018-11-13 16:22:34.366 +02:00 [INF] Request finished in 820.8397ms 200 application/json; charset=utf-8
+2018-11-13 16:22:51.248 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:22:52.046 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:22:52.218 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:22:52.231 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:22:52.255 +02:00 [INF] 
+
+2018-11-13 16:22:52.259 +02:00 [WRN] Request UserQuery begin
+2018-11-13 16:22:52.516 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:22:52.710 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:22:52.769 +02:00 [INF] Response UserQuery end
+
+2018-11-13 16:22:52.776 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 532.79910000000007ms.
+2018-11-13 16:22:52.793 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:22:52.857 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 631.44080000000008ms
+2018-11-13 16:22:52.883 +02:00 [INF] Request finished in 840.8855ms 200 application/json; charset=utf-8
+2018-11-13 16:24:04.456 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:24:05.226 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:24:05.387 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:24:05.403 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:24:05.430 +02:00 [INF] 
+
+2018-11-13 16:24:05.434 +02:00 [WRN] Request UserQuery begin
+2018-11-13 16:24:05.684 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:24:05.871 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:24:05.926 +02:00 [WRN] Response UserQuery end
+
+2018-11-13 16:24:05.934 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 517.81490000000008ms.
+2018-11-13 16:24:05.950 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:24:06.017 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 621.9266ms
+2018-11-13 16:24:06.049 +02:00 [INF] Request finished in 826.3353ms 200 application/json; charset=utf-8
+2018-11-13 16:24:28.713 +02:00 [INF] User profile is available. Using 'C:\Users\ZepsenWork\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-13 16:24:29.476 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-11-13 16:24:29.637 +02:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest)
+2018-11-13 16:24:29.650 +02:00 [INF] Executing action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) - Validation state: "Valid"
+2018-11-13 16:24:29.676 +02:00 [INF] 
+
+2018-11-13 16:24:29.925 +02:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-11-13 16:24:30.114 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Name]
+FROM [Users] AS [u]
+2018-11-13 16:24:30.177 +02:00 [INF] Executed action method MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 512.19490000000008ms.
+2018-11-13 16:24:30.193 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dom.Entities.User, Dom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-13 16:24:30.278 +02:00 [INF] Executed action MyMediatorRest.Controllers.ValuesController.Get (MyMediatorRest) in 616.26870000000008ms
+2018-11-13 16:24:30.299 +02:00 [INF] Request finished in 832.1937ms 200 application/json; charset=utf-8

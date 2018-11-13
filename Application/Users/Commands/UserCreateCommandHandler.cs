@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using DAL;
-using DAL.Entities;
+using Dom;
+using Dom.Entities;
 using MediatR;
 
 namespace Application.Users.Commands

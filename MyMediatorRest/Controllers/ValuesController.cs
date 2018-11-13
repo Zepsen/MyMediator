@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.Users.Commands;
 using Application.Users.Queries;
-using DAL.Entities;
+using Dom.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

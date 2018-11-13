@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using DAL.Entities;
+using Dom.Entities;
 using MediatR;
 
 namespace Application.Users.Queries

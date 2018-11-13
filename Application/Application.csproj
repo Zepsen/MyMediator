@@ -14,4 +14,10 @@
     <ProjectReference Include="..\Dom\Dom.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Serilog">
+      <HintPath>..\..\..\..\Users\ZepsenWork\.nuget\packages\serilog\2.5.0\lib\netstandard1.3\Serilog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace DAL.Entities
+﻿namespace Dom.Entities
 {
     public class User
     {

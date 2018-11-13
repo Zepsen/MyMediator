@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using DAL;
-using DAL.Entities;
+using Dom;
+using Dom.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 

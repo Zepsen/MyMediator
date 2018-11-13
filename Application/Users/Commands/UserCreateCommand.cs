@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using DAL.Entities;
-using MediatR;
+﻿using MediatR;
 
 namespace Application.Users.Commands
 {

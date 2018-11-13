@@ -1,7 +1,8 @@
 ﻿using System.Reflection;
 using Application.Core;
+using Application.Core.Behaviors;
 using Application.Users.Commands;
-using DAL;
+using Dom;
 using MediatR;
 using MediatR.Pipeline;
 using Microsoft.AspNetCore.Builder;
@@ -29,9 +30,10 @@ namespace MyMediatorRest
             services.AddDbContext<MyAppContext>
                 (options => options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=MyMegiatorDb;Trusted_Connection=True;"));
 
-            //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPreProcessorBehavior<,>));
-            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
             services.AddMediatR(Assembly.GetAssembly(typeof(UserCreateCommand)));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestLoggerBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
+
             services
                 .AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)

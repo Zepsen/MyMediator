@@ -17,7 +17,6 @@ namespace MyMediatorRest
 
             try
             {
-                CreateWebHostBuilder(args).Build().Run();
                 return;
             }
             catch (Exception ex)

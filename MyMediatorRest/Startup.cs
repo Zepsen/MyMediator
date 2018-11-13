@@ -26,7 +26,7 @@ namespace MyMediatorRest
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MyAppContext>
-                (options => options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=MyMegiatorDb;Trusted_Connection=True;"));
+                (options => options.UseSqlServer(Configuration.GetConnectionString("DatabaseConnectionString")));
 
             services.AddMediatR(Assembly.GetAssembly(typeof(UserCreateCommand)));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestLoggerBehavior<,>));

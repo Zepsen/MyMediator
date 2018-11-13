@@ -1,6 +1,7 @@
 ﻿using DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace DAL
 {
     public class MyAppContext : DbContext
